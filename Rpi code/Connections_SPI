@@ -1,0 +1,3 @@
+Raspi {21,19,23,24,39}  (pin numbers)
+ESP32 {12,13,14,15,GND}
+Connections for respective pins
