@@ -1,3 +1,8 @@
-Raspi {21,19,23,24,39}  (pin numbers)
-ESP32 {12,13,14,15,GND}
-Connections for respective pins
+ESP32‑S3 HSPI Slave ↔ Raspberry Pi Master Wiring
+Function                     Raspberry Pi Pin          ESP32‑S3 HSPI Default Pin
+MOSI (Pi → ESP32)            GPIO 10 (Pin 19)             GPIO 11
+MISO (ESP32 → Pi)            GPIO 9 (Pin 21)              GPIO 13
+SCLK                         GPIO 11 (Pin 23)             GPIO 12
+CS                           GPIO 8 (Pin 24)              GPIO 10
+GND                          Any GND Pin                   GND
+
