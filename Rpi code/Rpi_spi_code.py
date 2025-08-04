@@ -1,13 +1,12 @@
 import spidev
 import time
 
-# Create SPI object and open bus 0, device 0 (CE0)
 spi = spidev.SpiDev()
 spi.open(0, 0)
 spi.max_speed_hz = 500000
 spi.mode = 0b00
 
-# 👇 This is the variable you can change easily
+
 message_to_send = "RUN"
 
 def send_and_receive_string(msg):
@@ -29,4 +28,3 @@ try:
 except KeyboardInterrupt:
     print("Stopped by user")
     spi.close()
-
